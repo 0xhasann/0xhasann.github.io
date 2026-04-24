@@ -1,1 +1,41 @@
-<h1>Hello, this is my website</h1>
+<!doctype html>
+
+
+<html>
+
+<head>
+    <title>Waves</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="infobox">
+        <p id="login-form">
+            Enter a username:
+            <input id="name" type="text" maxlength="12" required autocomplete="username" inputmode="verbatim"
+                placeholder="Username">
+            <input type="button" id="loginBtn" name="login" value="Log in">
+        </p>
+        <p id="welcome-text" style="display:none;"></p>
+        </div>
+        <ul id="user-list"></ul>
+        </div>
+        <div id="camerabox" >
+            <video id="received_video" autoplay></video>
+                <span id="remote-name-label" class="video-label"></span> 
+            <video id="local_video" autoplay muted></video>
+                <span id="local-name-label" class="video-label local-label"></span> 
+
+            <button id="hangup-button" style="display:none;">Hang Up</button>
+        </div>
+       
+      
+
+    </div>
+</body>
+
+</html>
